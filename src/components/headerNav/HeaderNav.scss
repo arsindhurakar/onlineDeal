@@ -1,0 +1,35 @@
+@import "../../constants/main.scss";
+
+.headerNav {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 930px) {
+    margin: 0;
+  }
+
+  &__nav {
+    & > p:first-child {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      color: $font-tertiary;
+      cursor: pointer;
+    }
+  }
+
+  &__nav:first-child {
+    margin-right: 20px;
+  }
+
+  &__sidebarNav {
+    color: $font-secondary;
+    margin-bottom: 30px;
+
+    & > p:first-child {
+      font-size: 2rem;
+    }
+  }
+}

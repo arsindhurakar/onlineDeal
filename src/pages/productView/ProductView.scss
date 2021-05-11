@@ -1,0 +1,43 @@
+@import "../../constants/main.scss";
+
+.productView {
+  @include pageMargin;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    // @media only screen and (max-width: 930px) {
+    //   margin-top: 80px;
+    // }
+
+    @media only screen and (max-width: 760px) {
+      flex-direction: column;
+    }
+  }
+
+  &__productDetail {
+    width: 72%;
+
+    @media only screen and (max-width: 930px) {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  &__productDescription {
+    width: 25%;
+
+    @media only screen and (max-width: 930px) {
+      width: 35%;
+    }
+
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../constants/main.scss";
+
+.orderSummary {
+  width: 100%;
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  & li:last-child {
+    margin-bottom: 0;
+  }
+  &__cost {
+    border-bottom: 1px solid $border-primary;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+
+  &__total {
+    color: $font-tertiary;
+    margin-bottom: 20px;
+
+    & p {
+      font-size: 16px;
+    }
+  }
+}

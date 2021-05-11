@@ -1,0 +1,65 @@
+@import "../../constants/main.scss";
+
+.checkout {
+  @include formLayout;
+
+  &__container {
+    & > h2 {
+      position: relative;
+    }
+
+    & > h2:after {
+      position: absolute;
+      top: 51%;
+      right: 0;
+      overflow: hidden;
+      width: 75%;
+      height: 0.5px;
+      content: "";
+      background-color: $font-tertiary;
+
+      @media only screen and (max-width: 1200px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: 65%;
+      }
+
+      @media only screen and (max-width: 325px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__name,
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+
+    & > div:first-child {
+      width: 43%;
+    }
+
+    & > div:last-child {
+      width: 55%;
+    }
+  }
+
+  &__location {
+    display: flex;
+    justify-content: space-between;
+
+    & > div:first-child {
+      width: 32%;
+    }
+
+    & > div:nth-child(2) {
+      width: 32%;
+    }
+
+    & > div:last-child {
+      width: 32%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../constants/main.scss";
+
+.searchResult {
+  padding: 10px 20px;
+  color: $font-primary;
+  // border-bottom: 1px solid $border-primary;
+  display: flex;
+
+  &:hover {
+    background-color: $bg-secondary;
+    color: white;
+    cursor: pointer;
+  }
+}

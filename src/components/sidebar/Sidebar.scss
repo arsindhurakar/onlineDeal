@@ -1,0 +1,46 @@
+@import "../../constants/main.scss";
+
+.sidebar {
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+
+  @media only screen and (max-width: 930px) {
+    display: none;
+  }
+
+  & > ul {
+    @media only screen and (max-width: 1500px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    & > li:first-child {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      padding: 14px;
+      color: $font-tertiary;
+      pointer-events: none;
+    }
+
+    & > li:last-child {
+      border: none;
+    }
+  }
+
+  &--isRow {
+    & > ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 5px;
+
+      & li {
+        border-radius: 3px;
+        border: none;
+      }
+    }
+  }
+}

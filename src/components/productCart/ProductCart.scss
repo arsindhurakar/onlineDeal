@@ -1,0 +1,40 @@
+@import "../../constants/main.scss";
+
+.productCart {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-primary;
+
+  &__image {
+    width: 250px;
+    margin-right: 20px;
+  }
+
+  &__head {
+    margin-bottom: 10px;
+
+    & > h3 {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__details {
+    width: 100%;
+    & > p {
+      color: $font-tertiary;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btnRemove {
+    & > span {
+      color: $font-tertiary;
+      font-size: 1.6rem;
+
+      &:hover {
+        cursor: pointer;
+        color: red;
+      }
+    }
+  }
+}

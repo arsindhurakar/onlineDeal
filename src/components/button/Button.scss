@@ -1,0 +1,21 @@
+@import "../../constants/main.scss";
+
+.button {
+  outline: none;
+  border: none;
+  background-color: $bg-primary;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  width: 100%;
+
+  &--secondary {
+    background-color: $font-tertiary;
+  }
+}
+
+.button[disabled]:hover {
+  // cursor: progress;
+  cursor: not-allowed;
+  opacity: 1;
+}

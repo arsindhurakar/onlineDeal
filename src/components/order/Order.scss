@@ -1,0 +1,12 @@
+@import "../../constants/main.scss";
+
+.order {
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: $box-shadow;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+}

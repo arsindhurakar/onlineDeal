@@ -1,0 +1,36 @@
+@import "../../constants/main.scss";
+
+.searchBar {
+  background-color: white;
+  border: 1px solid $border-primary;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  max-height: 395px !important;
+  overflow: hidden;
+  // width: 100%;
+
+  & > input {
+    width: 100%;
+    background: none;
+    outline: none;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+
+    &::placeholder {
+      font-family: $montserrat;
+    }
+  }
+
+  // & > button {
+  //   background-color: $font-tertiary;
+  //   border: none;
+  //   outline: none;
+  //   color: white;
+  //   position: absolute;
+  //   height: 100%;
+  //   right: 0;
+  //   width: 60px;
+  // }
+}

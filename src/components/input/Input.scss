@@ -1,0 +1,50 @@
+@import "../../constants/main.scss";
+
+.input {
+  display: flex;
+  flex-direction: column;
+
+  &__labels {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+
+    & label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  &__nextLabel {
+    color: $font-tertiary;
+  }
+
+  &__primary {
+    padding: 8px;
+    outline: none;
+    border: 1px solid $border-primary;
+    border-radius: 5px;
+
+    &:focus,
+    textarea:focus {
+      box-shadow: 0 0 5px $font-tertiary;
+      border: 1px solid $font-tertiary;
+    }
+  }
+
+  &__secondary {
+    background-color: #f8f8f8;
+
+    &--isMessage {
+      height: 120px;
+      resize: none;
+    }
+
+    &::placeholder {
+      font-family: $montserrat;
+      color: $font-secondary;
+      font-size: 12px;
+    }
+  }
+}

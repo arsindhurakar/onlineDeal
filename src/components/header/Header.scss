@@ -1,0 +1,107 @@
+@import "../../constants/main.scss";
+
+.header {
+  background-color: $bg-primary;
+  color: $font-secondary;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999;
+  max-height: 60px;
+
+  @media only screen and (max-width: 930px) {
+    &__nav:nth-child(4) {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    max-height: 100px;
+  }
+
+  &__logo:nth-child(2) {
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__cart:nth-child(5) {
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+
+    & p {
+      line-height: 1.4;
+    }
+
+    @media only screen and (max-width: 930px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__burgerMenu {
+    display: none;
+    margin: 5px 20px 0 0;
+
+    @media only screen and (max-width: 930px) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    margin: 5px 20px 0 0;
+  }
+
+  &__search {
+    flex: 1;
+
+    @media only screen and (max-width: 930px) {
+      flex: 0.8;
+    }
+
+    @media only screen and (max-width: 700px) {
+      flex: 1;
+    }
+  }
+
+  &__nav {
+    margin-top: 3px;
+  }
+
+  &__cart {
+    margin-top: 5px;
+
+    &:hover {
+      cursor: pointer;
+      color: $font-tertiary;
+    }
+
+    & > span {
+      display: flex;
+
+      & > p {
+        margin-left: 5px;
+        color: $font-tertiary;
+      }
+    }
+  }
+
+  &__containerHidden {
+    display: none;
+    width: 95%;
+    margin: 0 auto 6px;
+
+    @media only screen and (max-width: 700px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

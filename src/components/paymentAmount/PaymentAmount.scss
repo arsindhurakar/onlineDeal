@@ -1,0 +1,19 @@
+@import "../../constants/main.scss";
+
+.paymentAmount {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  & > p {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+  }
+
+  & > p:last-child {
+    color: $font-tertiary;
+    font-size: 1.6rem;
+    font-weight: 200;
+  }
+}

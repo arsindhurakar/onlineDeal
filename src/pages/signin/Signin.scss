@@ -1,0 +1,38 @@
+@import "../../constants/main.scss";
+
+.signin {
+  @include formLayout;
+
+  &__newAccount {
+    & > p {
+      margin: 20px 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      color: gray;
+    }
+
+    p:before,
+    p:after {
+      position: absolute;
+      top: 51%;
+      overflow: hidden;
+      width: 25%;
+      height: 0.5px;
+      content: "";
+      background-color: $border-primary;
+      margin-left: 5%;
+    }
+    p:before {
+      margin-left: -30%;
+      text-align: right;
+    }
+    .color {
+      background-color: #ccc;
+    }
+  }
+
+  &__failed {
+    @include alertMessage;
+  }
+}

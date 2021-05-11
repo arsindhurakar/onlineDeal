@@ -1,0 +1,20 @@
+@import "../../constants/main.scss";
+
+.logo {
+  & > p {
+    font-size: 20px;
+
+    > span {
+      font-size: 12px;
+      color: $font-tertiary;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--disabled:hover {
+    cursor: default;
+  }
+}

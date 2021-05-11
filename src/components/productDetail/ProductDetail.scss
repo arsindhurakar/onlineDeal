@@ -1,0 +1,89 @@
+@import "../../constants/main.scss";
+
+.productDetail {
+  .productDetail__topContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 930px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    width: 40%;
+
+    @media only screen and (max-width: 930px) {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: 930px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    & > p {
+      color: green;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__head {
+    margin-bottom: 20px;
+    & > p {
+      color: gray;
+      margin-top: 10px;
+    }
+  }
+
+  &__prices {
+    margin-bottom: 30px;
+    & h3 {
+      color: $font-tertiary;
+    }
+
+    & p {
+      text-decoration: line-through;
+      color: gray;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__buttonBuy {
+    width: 50%;
+    margin-right: 5px;
+  }
+
+  &__buttonAdd {
+    width: 50%;
+    margin-left: 5px;
+  }
+
+  .productDetail__bottomContainer {
+    & h3 {
+      margin-bottom: 15px;
+    }
+
+    & > ul {
+      & li {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      & li:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

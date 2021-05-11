@@ -1,0 +1,36 @@
+@import "../../constants/main.scss";
+
+.registration {
+  @include formLayout;
+
+  &__failed {
+    @include alertMessage;
+  }
+
+  &__success {
+    @include alertMessage;
+    border: 1px solid $alert-success;
+    color: $alert-success;
+  }
+
+  &__container {
+    & p {
+      font-size: 12px;
+      margin-top: 20px;
+      color: gray;
+    }
+
+    & p:last-child {
+      border-top: 1px solid $border-primary;
+      padding-top: 20px;
+    }
+
+    & span {
+      color: $font-tertiary;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
