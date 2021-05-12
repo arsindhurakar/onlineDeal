@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import uuid from "react-uuid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./ProductDetail.scss";
 
 import { Button } from "../../components";
@@ -25,6 +27,7 @@ function ProductDetail({ details }) {
         alt,
       })
     );
+    toast("Added successfully");
   };
 
   return (
@@ -52,6 +55,10 @@ function ProductDetail({ details }) {
                 <Button onClick={handleAddProduct} secondary>
                   Add to Cart
                 </Button>
+                <ToastContainer
+                  className="productDetail__toast"
+                  autoClose={2000}
+                />
               </div>
             </div>
           )}
