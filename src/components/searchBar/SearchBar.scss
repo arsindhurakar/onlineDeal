@@ -6,9 +6,8 @@
   border-radius: 3px;
   overflow: hidden;
   position: relative;
-  max-height: 395px !important;
+  max-height: 395px;
   overflow: hidden;
-  // width: 100%;
 
   & > input {
     width: 100%;
@@ -22,15 +21,4 @@
       font-family: $montserrat;
     }
   }
-
-  // & > button {
-  //   background-color: $font-tertiary;
-  //   border: none;
-  //   outline: none;
-  //   color: white;
-  //   position: absolute;
-  //   height: 100%;
-  //   right: 0;
-  //   width: 60px;
-  // }
 }

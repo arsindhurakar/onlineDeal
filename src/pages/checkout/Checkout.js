@@ -3,11 +3,10 @@ import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import "./Checkout.scss";
 
-import { Input, Button, Logo } from "../../components";
+import { Input, Button, Logo, SuccessCheckout } from "../../components";
 import { db } from "../../utils/firebase";
 import { selectUser } from "../../features/userSlice";
 import { selectCart } from "../../features/cartSlice";
-import { SuccessCheckout } from "../../components/";
 
 function Checkout() {
   const [fname, setFname] = useState("");

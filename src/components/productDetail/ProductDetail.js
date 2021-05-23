@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./ProductDetail.scss";
 
-import { Button } from "../../components";
+import { Button } from "..";
 import { addProduct } from "../../features/cartSlice";
 import { selectUser } from "../../features/userSlice";
 

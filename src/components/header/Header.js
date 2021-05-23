@@ -3,11 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./Header.scss";
 
-import { Logo } from "../logo";
+import { Logo, HeaderNav, SearchBar } from "..";
 import { selectCart } from "../../features/cartSlice";
 import { toggleMenu } from "../../features/toggleSlice";
-import { HeaderNav } from "../headerNav";
-import { SearchBar } from "../searchBar";
 
 function Header() {
   const history = useHistory();

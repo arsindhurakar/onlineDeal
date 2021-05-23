@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./SidebarNav.scss";
 
-import { SidebarItem } from "../sidebarItem";
+import { HeaderNav, SidebarItem } from "..";
 import { categories } from "../../utils/categories";
-import { HeaderNav } from "../headerNav";
 import { apiData } from "../../services";
 
 function SidebarNav({ isToggle }) {

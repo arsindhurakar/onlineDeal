@@ -21,3 +21,7 @@ export { SidebarNav } from "./sidebarNav";
 export { HeaderNav } from "./headerNav";
 export { SearchBar } from "./searchBar";
 export { SearchResult } from "./searchResult";
+export { ProductReviews } from "./productReviews";
+export { AddReview } from "./addReview";
+export { ProductReview } from "./productReview";
+export { SidebarItem } from "./sidebarItem";

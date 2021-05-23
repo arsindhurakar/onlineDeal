@@ -3,7 +3,7 @@ import { useHistory } from "react-router";
 import { useSelector } from "react-redux";
 import "./OrderSummary.scss";
 
-import { Button } from "../button";
+import { Button } from "..";
 import { selectCart } from "../../features/cartSlice";
 
 function OrderSummary() {

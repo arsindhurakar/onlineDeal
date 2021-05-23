@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { ProductDescription, ProductDetail, Sidebar } from "../../components";
 import "./ProductView.scss";
+
+import {
+  ProductDescription,
+  ProductDetail,
+  ProductReviews,
+  Sidebar,
+} from "../../components";
 
 function ProductView() {
   const location = useLocation();
@@ -18,6 +24,9 @@ function ProductView() {
         </div>
         <div className="productView__productDescription">
           <ProductDescription />
+        </div>
+        <div className="productView__productReviews">
+          <ProductReviews />
         </div>
       </div>
     </div>

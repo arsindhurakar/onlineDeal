@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./BankPayment.scss";
 
-import { Input, Button, PaymentAmount } from "../../components";
+import { Input, Button, PaymentAmount } from "..";
 
 function BankPayment({ orderTotal, setErrorMessage }) {
   const [accountNumber, setAccountNumber] = useState("");

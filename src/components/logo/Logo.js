@@ -1,6 +1,6 @@
 import React from "react";
-import "./Logo.scss";
 import { useHistory } from "react-router-dom";
+import "./Logo.scss";
 
 function Logo({ disabled }) {
   const history = useHistory();

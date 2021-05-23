@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import "./Sidebar.scss";
 
+import { SidebarItem } from "..";
 import { apiData } from "../../services";
-import { SidebarItem } from "../sidebarItem";
 import { categories } from "../../utils/categories";
 
 function Sidebar({ isRow }) {

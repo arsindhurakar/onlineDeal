@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import "./Order.scss";
 
-import { ProductCart } from "../../components";
+import { ProductCart } from "..";
 
 function Order({ order }) {
   return (

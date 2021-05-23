@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import "./CardPayment.scss";
 
-import { Button, PaymentAmount } from "../../components";
+import { Button, PaymentAmount } from "..";
 import axiosInstance from "../../utils/axios";
 
 function CardPayment({ orderTotal, setErrorMessage }) {

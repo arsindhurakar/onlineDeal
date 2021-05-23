@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./SearchBar.scss";
 
 import { apiData } from "../../services";
-import { SearchResult } from "../searchResult";
+import { SearchResult } from "..";
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,9 +28,6 @@ function SearchBar() {
         value={searchTerm}
         onChange={handleChange}
       />
-      {/* <button>
-        <i className="fas fa-search fa-lg"></i>
-      </button> */}
       <div className="searchBar__searchResults">
         {isSearch &&
           searchResults
@@ -38,9 +35,12 @@ function SearchBar() {
               if (searchTerm === "") {
                 return null;
               }
-              return item.title
-                .toLowerCase()
-                .includes(searchTerm.toLowerCase());
+              return (
+                item.title
+                  .toLowerCase()
+                  // .startsWith(searchTerm.toLowerCase())
+                  .includes(searchTerm.toLowerCase())
+              );
             })
             .map((result) => (
               <SearchResult

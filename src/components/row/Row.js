@@ -3,7 +3,7 @@ import Slider from "react-slick";
 
 import "./Row.scss";
 
-import { Article } from "../article";
+import { Article } from "..";
 
 function Row({ title, product, slides }) {
   const stylesArrow = {

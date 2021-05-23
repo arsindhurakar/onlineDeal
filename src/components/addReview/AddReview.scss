@@ -1,0 +1,10 @@
+.addReview {
+  &__btn {
+    width: 30%;
+    margin-top: 15px;
+
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+    }
+  }
+}

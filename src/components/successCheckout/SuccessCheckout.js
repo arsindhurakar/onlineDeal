@@ -4,9 +4,8 @@ import { useHistory } from "react-router-dom";
 import Modal from "react-modal";
 import "./SuccessCheckout.scss";
 
-import { Button } from "../../components";
+import { Button, Logo } from "..";
 import { selectUser } from "../../features/userSlice";
-import { Logo } from "../logo";
 
 function SuccessCheckout() {
   const user = useSelector(selectUser);
